@@ -1,7 +1,7 @@
 import React from 'react'
 
 const AddEmployeeComp = () => {
-  return <p>Add Employee Page</p>
+  return <div>Add Employee Page</div>
 }
 
 export default AddEmployeeComp
