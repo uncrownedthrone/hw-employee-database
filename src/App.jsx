@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
-import Page from './pages/Page'
-import Page2 from './pages/Page2'
+import AllEmployees from './pages/AllEmployees'
+import SingleEmployee from './pages/SingleEmployee'
 import HomePage from './pages/HomePage'
-import NotFound from './pages/NotFound'
+import AddEmployee from './pages/AddEmployee'
 
 const App = () => {
   return (
@@ -13,22 +13,25 @@ const App = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/">Go Home</Link>
+              <Link to="/">Home Page</Link>
             </li>
             <li>
-              <Link to="/1">Page 1</Link>
+              <Link to="/1">All Employees</Link>
             </li>
             <li>
-              <Link to="/2">Page 2</Link>
+              <Link to="/2">Single Employee</Link>
+            </li>
+            <li>
+              <Link to="/3">Add Employee</Link>
             </li>
           </ul>
         </nav>
       </header>
       <Switch>
         <Route exact path="/" component={HomePage}></Route>
-        <Route exact path="/1" component={Page}></Route>
-        <Route exact path="/2" component={Page2}></Route>
-        <Route path="*" component={NotFound}></Route>
+        <Route exact path="/1" component={AllEmployees}></Route>
+        <Route exact path="/2" component={SingleEmployee}></Route>
+        <Route exact path="/3" component={AddEmployee}></Route>
       </Switch>
     </Router>
   )
