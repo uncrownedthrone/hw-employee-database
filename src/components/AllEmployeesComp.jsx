@@ -22,11 +22,9 @@ const AllEmployeesComp = () => {
           return (
             <section className="employee" key={i}>
               <p>
-                Name: {employee.firstName} {employee.lastName}
+                {employee.firstName} {employee.lastName} | {employee.jobTitle}
               </p>
-              <p>Job Title: {employee.jobTitle}</p>
-              <p>Full-Time Status: {employee.isFullTime}</p>
-              <p>Image</p>
+              <p>Full-Time Status: {employee.isFullTime.toString()}</p>
             </section>
           )
         })}

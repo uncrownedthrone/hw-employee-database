@@ -1,7 +1,7 @@
 import React from 'react'
 
 const SingleEmployeeComp = () => {
-  return <div>Single Employee Page</div>
+  return <div>This is the Single Employee Page</div>
 }
 
 export default SingleEmployeeComp

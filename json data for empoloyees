@@ -1,0 +1,44 @@
+{
+  "id": 001,
+  "firstName": "Justin",
+  "lastName": "Swiger",
+  "birthday": "1985-06-05T18:19:06.424Z",
+  "hiredDate": "2018-03-01T18:19:06.424Z",
+  "profileImage": "https://avatars3.githubusercontent.com/u/52833074?s=460&v=4",
+  "jobTitle": "President & CEO",
+  "jobDescription": "url(Responsible for all day to day activities of the corporation)",
+  "phoneNumber": "555-555-5555",
+  "interestingFact": "Justin was lived in Hawaii!",
+  "address": "123 Anywhere St.",
+  "city": "Tampa",
+  "zip": "33333",
+  "state": "FL",
+  "emergencyContactPerson": "Danielle Swiger",
+  "emergencyContactPhone": "555-555-5555",
+  "emergencyContactAddress": "123 Anywhere St.",
+  "ptoHours": 40,
+  "companyKey": "string"
+}
+
+{
+  "id": 002,
+  "firstName": "Mary",
+  "lastName": "Smith",
+  "birthday": "1990-02-23T18:19:06.424Z",
+  "hiredDate": "2018-04-01T18:19:06.424Z",
+  "profileImage": "",
+  "jobTitle": "President & CEO",
+  "jobDescription": "Responsible for all day to day activities of the corporation",
+  "phoneNumber": "555-555-5555",
+  "interestingFact": "Justin was lived in Hawaii!",
+  "address": "123 Anywhere St.",
+  "city": "Tampa",
+  "zip": "33333",
+  "state": "FL",
+  "emergencyContactPerson": "Danielle Swiger",
+  "emergencyContactPhone": "555-555-5555",
+  "emergencyContactAddress": "123 Anywhere St.",
+  "ptoHours": 40,
+  "companyKey": "string"
+}
+

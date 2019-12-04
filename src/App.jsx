@@ -9,17 +9,25 @@ const App = () => {
   return (
     <Router>
       <header>
-        <h1>Avado</h1>
+        <h1>
+          A<span className="littleLetters">VADO</span>
+        </h1>
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">
+                Home <span className="divider">|</span>
+              </Link>
             </li>
             <li>
-              <Link to="/all">All Employees</Link>
+              <Link to="/all">
+                All Employees <span className="divider">|</span>
+              </Link>
             </li>
             <li>
-              <Link to="/employee">Single Employee</Link>
+              <Link to="/employee">
+                Single Employee <span className="divider">|</span>
+              </Link>
             </li>
             <li>
               <Link to="/add">Add Employee</Link>
