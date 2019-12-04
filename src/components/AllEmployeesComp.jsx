@@ -11,16 +11,26 @@ const AllEmployeesComp = () => {
     setEmployees(resp.data)
   }
 
-  console.log({ employees })
-
   useEffect(() => {
     getEmployeeData()
-    setEmployees()
   }, [])
 
   return (
     <>
-      <p>test-{employees}</p>
+      <main>
+        {employees.map((employee, i) => {
+          return (
+            <section className="employee" key={i}>
+              <p>
+                Name: {employee.firstName} {employee.lastName}
+              </p>
+              <p>Job Title: {employee.jobTitle}</p>
+              <p>Full-Time Status: {employee.isFullTime}</p>
+              <p>Image</p>
+            </section>
+          )
+        })}
+      </main>
     </>
   )
 }
