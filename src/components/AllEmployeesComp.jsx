@@ -7,7 +7,6 @@ const AllEmployeesComp = () => {
   const [employees, setEmployees] = useState([])
   const getEmployeeData = async () => {
     const resp = await axios.get(apiUrl)
-    console.log(resp.data)
     setEmployees(resp.data)
   }
 
@@ -21,10 +20,13 @@ const AllEmployeesComp = () => {
         {employees.map((employee, i) => {
           return (
             <section className="employee" key={i}>
+              <p>Full-Time: {employee.isFullTime.toString() ? 'Yes' : 'No'}</p>
               <p>
                 {employee.firstName} {employee.lastName} | {employee.jobTitle}
               </p>
-              <p>Full-Time Status: {employee.isFullTime.toString()}</p>
+              <section className="imageBox">
+                <img src={employee.profileImage} alt="" />
+              </section>
             </section>
           )
         })}

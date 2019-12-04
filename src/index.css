@@ -54,10 +54,10 @@ h1 {
   font-size: 2.5rem;
 }
 
-section {
+.employee {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
   margin: 1rem;
   padding: 1rem;
   border: 5px solid black;
@@ -66,4 +66,16 @@ section {
 
 .divider {
   color: black;
+}
+
+img {
+  display: flex;
+  height: auto;
+  width: 300px;
+  border-radius: 3px;
+  margin-right: 2rem;
+}
+
+p {
+  margin-right: 1rem;
 }
