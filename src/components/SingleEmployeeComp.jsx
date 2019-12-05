@@ -26,16 +26,20 @@ const SingleEmployeeComp = props => {
                 Job Description - {employee.jobDescription}{' '}
               </li>
               <li className="singleEmpLi">
-                {employee.address} {employee.city}, {employee.state}{' '}
+                Address - {employee.address} {employee.city}, {employee.state}{' '}
                 {employee.zip}
               </li>
-              <li className="singleEmpLi">Contact - {employee.phoneNumber}</li>
               <li className="singleEmpLi">
-                Emergency Contact: {employee.emergencyContactPerson}
+                Contact - {employee.email} | {employee.phoneNumber}
               </li>
-              <li className="singleEmpLi">PTO Left: {employee.ptoHours}</li>
+              <li className="singleEmpLi">
+                Emergency Contact - {employee.emergencyContactPerson}
+              </li>
+              <li className="singleEmpLi">
+                PTO Left - {employee.ptoHours} hrs
+              </li>
             </ul>
-            <p>
+            <p className="singleEmpP">
               {employee.firstName} {employee.lastName}
               <span> </span>| {employee.jobTitle}
             </p>
