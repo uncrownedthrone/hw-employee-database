@@ -96,3 +96,41 @@ p {
 .singleEmpP {
   width: 220px;
 }
+
+label {
+  font-size: 1.25rem;
+  margin-right: 3rem;
+  padding: 1rem;
+}
+
+button {
+  font-size: 1.25rem;
+  margin: 1rem;
+  border-radius: 3px;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 6px;
+  align-content: center;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+footer {
+  font-size: 0.75rem;
+  margin: 1rem;
+}
+
+form,
+footer {
+  display: flex;
+  justify-content: center;
+}
