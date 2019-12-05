@@ -96,13 +96,16 @@ const AddEmployeeComp = () => {
             </section>
             <section>
               <label htmlFor="fullTime">Full Time</label>
-              <input
+              <select
                 onChange={e => {
                   setIsFullTime(e.target.value)
                 }}
                 type="text"
                 value={isFullTime}
-              />
+              >
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+              </select>
             </section>
             <section>
               <label htmlFor="profileImage">Profile Image URL</label>
