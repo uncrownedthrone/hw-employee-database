@@ -25,11 +25,6 @@ const App = () => {
               </Link>
             </li>
             <li>
-              <Link to="/employee">
-                Single Employee <span className="divider">|</span>
-              </Link>
-            </li>
-            <li>
               <Link to="/add">Add Employee</Link>
             </li>
           </ul>
@@ -38,7 +33,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={HomePage}></Route>
         <Route exact path="/all" component={AllEmployees}></Route>
-        <Route exact path="/employee" component={SingleEmployee}></Route>
+        <Route exact path="/employee/:id" component={SingleEmployee}></Route>
         <Route exact path="/add" component={AddEmployee}></Route>
       </Switch>
     </Router>
