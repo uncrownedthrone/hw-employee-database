@@ -30,6 +30,7 @@ const App = () => {
           </ul>
         </nav>
       </header>
+      <hr></hr>
       <Switch>
         <Route exact path="/" component={HomePage}></Route>
         <Route exact path="/all" component={AllEmployees}></Route>

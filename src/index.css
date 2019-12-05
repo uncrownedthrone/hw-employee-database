@@ -17,11 +17,13 @@ a,
 a:visited {
   color: black;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 header {
@@ -97,12 +99,6 @@ p {
   width: 220px;
 }
 
-label {
-  font-size: 1.25rem;
-  margin-right: 3rem;
-  padding: 1rem;
-}
-
 button {
   font-size: 1.25rem;
   margin: 1rem;
@@ -134,4 +130,37 @@ form,
 footer {
   display: flex;
   justify-content: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.labels {
+  display: flex;
+  height: 0.25rem;
+  font-size: 1.25rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type='date'].dateBox {
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+select {
+  outline: none;
+  font-size: 1rem;
+  width: 10.6rem;
+  height: 1.5rem;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+hr {
+  border: 2px solid black;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
 }

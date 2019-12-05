@@ -47,14 +47,15 @@ const AddEmployeeComp = () => {
         ptoHours: ptoHours,
       }
     )
-    console.log(resp.data)
   }
+
   return (
     <>
       <main>
+        <h2>Add a New Employee</h2>
         <form onSubmit={submitData}>
           <section>
-            <section>
+            <section className="labels">
               <label htmlFor="firstName">First Name</label>
               <input
                 onChange={e => {
@@ -64,7 +65,7 @@ const AddEmployeeComp = () => {
                 type="text"
               />
             </section>
-            <section>
+            <section className="labels">
               <label htmlFor="lastName">Last Name</label>
               <input
                 onChange={e => {
@@ -74,9 +75,10 @@ const AddEmployeeComp = () => {
                 type="text"
               />
             </section>
-            <section>
+            <section className="labels">
               <label htmlFor="birthday">Date of Birth</label>
               <input
+                className="dateBox"
                 onChange={e => {
                   setBirthday(e.target.value)
                 }}
@@ -84,9 +86,10 @@ const AddEmployeeComp = () => {
                 value={birthday}
               />
             </section>
-            <section>
+            <section className="labels">
               <label htmlFor="hireDate">Hire Date</label>
               <input
+                className="dateBox"
                 onChange={e => {
                   setHireDate(e.target.value)
                 }}
@@ -94,7 +97,7 @@ const AddEmployeeComp = () => {
                 value={hireDate}
               />
             </section>
-            <section>
+            <section className="labels">
               <label htmlFor="fullTime">Full Time</label>
               <select
                 onChange={e => {
@@ -103,12 +106,13 @@ const AddEmployeeComp = () => {
                 type="text"
                 value={isFullTime}
               >
+                <option value="">--</option>
                 <option value="true">Yes</option>
                 <option value="false">No</option>
               </select>
             </section>
-            <section>
-              <label htmlFor="profileImage">Profile Image URL</label>
+            <section className="labels">
+              <label htmlFor="profileImage">Profile Image</label>
               <input
                 onChange={e => {
                   setProfileImage(e.target.value)
@@ -118,7 +122,7 @@ const AddEmployeeComp = () => {
               />
             </section>
 
-            <section>
+            <section className="labels">
               <label htmlFor="jobTitle">Job Title</label>
               <input
                 onChange={e => {
@@ -128,7 +132,7 @@ const AddEmployeeComp = () => {
                 value={jobTitle}
               />
             </section>
-            <section>
+            <section className="labels">
               <label htmlFor="jobDescription">Job Description</label>
               <input
                 onChange={e => {
@@ -138,7 +142,7 @@ const AddEmployeeComp = () => {
                 value={jobDescription}
               />
             </section>
-            <section>
+            <section className="labels">
               <label htmlFor="phone">Phone Number</label>
               <input
                 onChange={e => {
@@ -149,7 +153,7 @@ const AddEmployeeComp = () => {
               />
             </section>
 
-            <section>
+            <section className="labels">
               <label htmlFor="address">Address</label>
               <input
                 onChange={e => {
@@ -159,7 +163,7 @@ const AddEmployeeComp = () => {
                 value={address}
               />
             </section>
-            <section>
+            <section className="labels">
               <label htmlFor="city">City</label>
               <input
                 onChange={e => {
@@ -169,7 +173,7 @@ const AddEmployeeComp = () => {
                 value={city}
               />
             </section>
-            <section>
+            <section className="labels">
               <label htmlFor="state">State</label>
               <input
                 onChange={e => {
@@ -179,7 +183,7 @@ const AddEmployeeComp = () => {
                 value={state}
               />
             </section>
-            <section>
+            <section className="labels">
               <label htmlFor="zip">Zip</label>
               <input
                 onChange={e => {
@@ -189,7 +193,7 @@ const AddEmployeeComp = () => {
                 value={zip}
               />
             </section>
-            <section>
+            <section className="labels">
               <label htmlFor="email">E-mail</label>
               <input
                 onChange={e => {
@@ -199,7 +203,7 @@ const AddEmployeeComp = () => {
                 value={email}
               />
             </section>
-            <section>
+            <section className="labels">
               <label htmlFor="emergencyContactName">ICE Person</label>
               <input
                 onChange={e => {
@@ -209,7 +213,7 @@ const AddEmployeeComp = () => {
                 value={emergencyContactPerson}
               />
             </section>
-            <section>
+            <section className="labels">
               <label htmlFor="emergencyContactPhone">ICE Phone</label>
               <input
                 onChange={e => {
@@ -219,7 +223,7 @@ const AddEmployeeComp = () => {
                 value={emergencyContactPhone}
               />
             </section>
-            <section>
+            <section className="labels">
               <label htmlFor="emergencyContactEmail">ICE E-mail</label>
               <input
                 onChange={e => {
@@ -229,8 +233,7 @@ const AddEmployeeComp = () => {
                 value={emergencyContactAddress}
               />
             </section>
-
-            <section>
+            <section className="labels">
               <label htmlFor="pto">PTO Hours</label>
               <input
                 onChange={e => {
