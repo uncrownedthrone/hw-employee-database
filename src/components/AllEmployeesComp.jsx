@@ -21,18 +21,24 @@ const AllEmployeesComp = () => {
         {employees.map((employee, i) => {
           return (
             <>
-              <section className="employee" key={i}>
-                <p>
-                  Full-Time: {employee.isFullTime.toString() ? 'Yes' : 'No'}
-                </p>
-                <p>
-                  <Link to={'/employee/' + employee.id}>
-                    {employee.firstName} {employee.lastName}
-                  </Link>
-                  <span> </span>| {employee.jobTitle}
-                </p>
-                <section className="imageBox">
-                  <img src={employee.profileImage} alt="" />
+              <section className="everyEmployeeBox">
+                <section className="employee" key={i}>
+                  <p>
+                    Full-Time: {employee.isFullTime.toString() ? 'Yes' : 'No'}
+                  </p>
+                  <p>
+                    <Link to={'/employee/' + employee.id}>
+                      {employee.firstName} {employee.lastName}
+                    </Link>
+                    <span> </span>| {employee.jobTitle}
+                  </p>
+                  <section className="imageBox">
+                    <img
+                      className="profileImage"
+                      src={employee.profileImage}
+                      alt=""
+                    />
+                  </section>
                 </section>
               </section>
             </>
