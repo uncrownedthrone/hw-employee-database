@@ -31,14 +31,26 @@ header {
   margin: 1rem;
 }
 
-ul {
+.homePageUl {
   list-style: none;
   display: flex;
   flex-direction: row;
 }
 
-li {
+.homePageLi {
   margin: 0.25rem;
+  list-style: none;
+}
+
+.singleEmpUl {
+  display: flex;
+  flex-direction: column;
+}
+
+.singleEmpLi {
+  margin-top: -1rem;
+  padding: 1rem;
+  list-style: none;
 }
 
 nav {

@@ -19,7 +19,22 @@ const SingleEmployeeComp = props => {
       <main>
         <>
           <section className="employee">
-            <p>Full-Time: {employee.isFullTime ? 'Yes' : 'No'}</p>
+            <ul className="singleEmpUl">
+              <li className="singleEmpLi">Born {employee.birthday}</li>
+              <li className="singleEmpLi">Hired {employee.hiredDate}</li>
+              <li className="singleEmpLi">
+                Job Description - {employee.jobDescription}{' '}
+              </li>
+              <li className="singleEmpLi">
+                {employee.address} {employee.city}, {employee.state}{' '}
+                {employee.zip}
+              </li>
+              <li className="singleEmpLi">Contact - {employee.phoneNumber}</li>
+              <li className="singleEmpLi">
+                Emergency Contact: {employee.emergencyContactPerson}
+              </li>
+              <li className="singleEmpLi">PTO Left: {employee.ptoHours}</li>
+            </ul>
             <p>
               {employee.firstName} {employee.lastName}
               <span> </span>| {employee.jobTitle}

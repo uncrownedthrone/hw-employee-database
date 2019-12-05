@@ -13,18 +13,18 @@ const App = () => {
           A<span className="littleLetters">VADO</span>
         </h1>
         <nav>
-          <ul>
-            <li>
+          <ul className="homePageUl">
+            <li className="homePageLi">
               <Link to="/">
                 Home <span className="divider">|</span>
               </Link>
             </li>
-            <li>
+            <li className="homePageLi">
               <Link to="/all">
                 All Employees <span className="divider">|</span>
               </Link>
             </li>
-            <li>
+            <li className="homePageLi">
               <Link to="/add">Add Employee</Link>
             </li>
           </ul>
