@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
 const AddEmployeeComp = () => {
+  const [resetPage, setResetPage] = useState(false)
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [birthday, setBirthday] = useState('')
@@ -21,8 +22,8 @@ const AddEmployeeComp = () => {
   const [emergencyContactAddress, setEmergencyContactAddress] = useState('')
   const [ptoHours, setPtoHours] = useState('')
 
-  const submitData = async event => {
-    event.preventDefault()
+  const submitData = async e => {
+    e.preventDefault()
     const resp = await axios.post(
       'https://sdg-staff-directory-app.herokuapp.com/api/Avado/Employees',
 
@@ -47,6 +48,8 @@ const AddEmployeeComp = () => {
         ptoHours: ptoHours,
       }
     )
+    console.log(resp.data)
+    setResetPage(true)
   }
 
   return (
@@ -119,6 +122,7 @@ const AddEmployeeComp = () => {
                 }}
                 type="url"
                 value={profileImage}
+                placeholder="Enter URL"
               />
             </section>
 
