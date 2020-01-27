@@ -13,8 +13,6 @@ Technologies Used:
 - Postman
 - HTML
 - CSS
-- Heroku
-- Netlify
 
 - API deployed on Heroku
 - Front-end developed using React.js
