@@ -1,5 +1,5 @@
 # Employee Database
-## Avado Enterprises Company Database
+## Deployed on Netlify: https://js-employee-db.netlify.com
 
 For this assignment, we were tasked with creating an employee database. This required the creation of a custom RESTful API from scratch as well as a front-end to view and update the database.
 
@@ -13,8 +13,5 @@ Technologies Used:
 - Postman
 - HTML
 - CSS
-
 - API deployed on Heroku
-- Front-end developed using React.js
-
-Deployed on Netlify: https://js-employee-db.netlify.com
+- Front-end developed with React.js
