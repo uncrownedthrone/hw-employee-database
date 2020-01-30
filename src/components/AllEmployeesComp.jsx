@@ -34,7 +34,7 @@ const AllEmployeesComp = () => {
                     <Link to={'/employee/' + employee.id}>
                       {employee.firstName} {employee.lastName}
                     </Link>
-                    <span> </span>| {employee.jobTitle}
+                    <span>&nbsp;</span>| {employee.jobTitle}
                   </p>
                   <p>
                     Full-Time: {employee.isFullTime.toString() ? 'Yes' : 'No'}
