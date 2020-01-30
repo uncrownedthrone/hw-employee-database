@@ -20,6 +20,17 @@ const SingleEmployeeComp = props => {
       <main>
         <>
           <section className="employee">
+            <p className="singleEmpP">
+              {employee.firstName} {employee.lastName}
+              <span>&nbsp;</span>| {employee.jobTitle}
+            </p>
+            <section className="imageBox">
+              <img
+                className="profileImage"
+                src={employee.profileImage}
+                alt=""
+              />
+            </section>
             <ul className="singleEmpUl">
               <li className="singleEmpLi">Born {employee.birthday}</li>
               <li className="singleEmpLi">Hired {employee.hiredDate}</li>
@@ -40,21 +51,9 @@ const SingleEmployeeComp = props => {
                 PTO Left - {employee.ptoHours} hrs
               </li>
             </ul>
-            <p className="singleEmpP">
-              {employee.firstName} {employee.lastName}
-              <span> </span>| {employee.jobTitle}
-            </p>
-            <section className="imageBox">
-              <img
-                className="profileImage"
-                src={employee.profileImage}
-                alt=""
-              />
-            </section>
           </section>
         </>
       </main>
-      )
     </>
   )
 }

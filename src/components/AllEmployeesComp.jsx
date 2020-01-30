@@ -23,15 +23,6 @@ const AllEmployeesComp = () => {
             <>
               <section className="everyEmployeeBox">
                 <section className="employee" key={i}>
-                  <p>
-                    Full-Time: {employee.isFullTime.toString() ? 'Yes' : 'No'}
-                  </p>
-                  <p>
-                    <Link to={'/employee/' + employee.id}>
-                      {employee.firstName} {employee.lastName}
-                    </Link>
-                    <span> </span>| {employee.jobTitle}
-                  </p>
                   <section className="imageBox">
                     <img
                       className="profileImage"
@@ -39,6 +30,15 @@ const AllEmployeesComp = () => {
                       alt=""
                     />
                   </section>
+                  <p>
+                    <Link to={'/employee/' + employee.id}>
+                      {employee.firstName} {employee.lastName}
+                    </Link>
+                    <span> </span>| {employee.jobTitle}
+                  </p>
+                  <p>
+                    Full-Time: {employee.isFullTime.toString() ? 'Yes' : 'No'}
+                  </p>
                 </section>
               </section>
             </>
